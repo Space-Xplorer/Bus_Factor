@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Custom scrollbars and styling tweaks if needed */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a; /* Slate 900 */
+  color: #f1f5f9; /* Slate 100 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
