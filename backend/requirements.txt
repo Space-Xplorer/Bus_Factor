@@ -1,0 +1,6 @@
+cognee==1.2.2
+fastapi
+uvicorn[standard]
+pandas
+pydantic
+python-dotenv

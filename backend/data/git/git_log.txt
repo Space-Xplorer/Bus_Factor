@@ -1,0 +1,211 @@
+date | commit | author | service | message
+2025-01-06 | 7d15438 | Priya Nair | payment-retry-engine | Fix idempotency key rotation on retry batch flush
+2025-01-11 | dc45d53 | Meera Joshi | merchant-dashboard | Add webhook configuration UI
+2025-01-14 | 8dfa6a5 | Karan Shah | notifications-service | Add webhook retry with jittered backoff
+2025-01-17 | 1d53434 | Priya Nair | payment-retry-engine | Refactor idempotency salt derivation
+2025-01-21 | ed2662e | Priya Nair | ledger-reconciliation-cron | Fix timezone bug in settlement date matching
+2025-01-25 | 5cec4eb | Priya Nair | payment-retry-engine | Add exponential backoff cap for capture retries
+2025-01-26 | c3fe018 | Tanvi Desai | infra-terraform | Fix k8s HPA config drift on payments cluster
+2025-01-26 | f319c12 | Arjun Mehta | legacy-fx-service | Fix rounding on INR conversion
+2025-02-01 | 5997004 | Arjun Mehta | legacy-fx-service | Patch security vulnerability in http client
+2025-02-02 | 978648f | Sara Iqbal | oncall-bot | Add postmortem reminder workflow
+2025-02-02 | 6db9910 | Tanvi Desai | oncall-bot | Add incident channel auto-creation
+2025-02-05 | 3b8faa1 | Arjun Mehta | payments-api | Add pagination to transactions listing
+2025-02-15 | 35c7936 | Rohan Bhat | analytics-pipeline | Add data quality checks per runbook section 4
+2025-02-23 | 27209bd | Priya Nair | payment-retry-engine | Tune retry batch size for HDFC settlement window
+2025-02-26 | 80bacd6 | Arjun Mehta | merchant-onboarding | Add bank account penny-drop verification
+2025-02-26 | 53cd626 | Tanvi Desai | oncall-bot | Add postmortem reminder workflow
+2025-02-27 | 6c6f763 | Karan Shah | notifications-service | Batch payment status emails per merchant
+2025-03-04 | 0837b8a | Arjun Mehta | payments-api | Add request tracing headers
+2025-03-07 | 008d412 | Priya Nair | ledger-reconciliation-cron | Fix double-posting when cron reruns before 06:00 IST
+2025-03-09 | 0ea2622 | Arjun Mehta | merchant-onboarding | Fix GSTIN validation regex
+2025-03-12 | 988c24c | Priya Nair | payment-retry-engine | Add metrics for retry queue depth
+2025-03-12 | 969b666 | Priya Nair | kafka-settlement-consumer | Fix duplicate ledger write on rebalance replay
+2025-03-16 | 3c36529 | Arjun Mehta | merchant-onboarding | Add PAN verification step to KYC flow
+2025-03-17 | 885f6e6 | Priya Nair | payment-retry-engine | Guard against duplicate capture on gateway timeout
+2025-03-18 | 3a578a8 | Arjun Mehta | payments-api | Improve error codes for declined captures
+2025-03-18 | 4774bc5 | Rohan Bhat | analytics-pipeline | Add backfill support for missed ETL windows
+2025-03-19 | 0f1259e | Priya Nair | kafka-settlement-consumer | Fix offset commit race during consumer rebalance
+2025-03-20 | 2bcfbe0 | Priya Nair | payments-api | Add rate limiting per merchant API key
+2025-03-21 | 9f044ae | Vikram Pillai | merchant-onboarding | Improve onboarding funnel event tracking
+2025-03-21 | e2d9de5 | Dev Kulkarni | merchant-dashboard | Fix date range picker timezone handling
+2025-03-24 | dc815fe | Priya Nair | ledger-reconciliation-cron | Add mismatch report email to finance team
+2025-03-24 | b0e6a96 | Ananya Rao | notifications-service | Batch payment status emails per merchant
+2025-03-27 | 7c69dee | Priya Nair | payment-retry-engine | Tune retry batch size for HDFC settlement window
+2025-03-29 | 118a9d2 | Arjun Mehta | merchant-onboarding | Handle KYC document re-upload flow
+2025-03-30 | 956b8c0 | Vikram Pillai | merchant-onboarding | Improve onboarding funnel event tracking
+2025-04-05 | 0822e8f | Priya Nair | payments-api | Improve error codes for declined captures
+2025-04-15 | 580d7b7 | Arjun Mehta | payments-api | Fix timeout handling on gateway calls
+2025-04-16 | ba6c34a | Priya Nair | kafka-settlement-consumer | Tune max.poll.records for settlement bursts
+2025-04-16 | ffd0f9d | Priya Nair | ledger-reconciliation-cron | Skip reconciliation for reversed transactions
+2025-04-18 | 369147e | Vikram Pillai | merchant-onboarding | Handle KYC document re-upload flow
+2025-04-20 | e465e15 | Priya Nair | payments-api | Add rate limiting per merchant API key
+2025-04-25 | 27cb6f2 | Karan Shah | notifications-service | Add webhook signature verification
+2025-04-25 | 3805f90 | Meera Joshi | merchant-dashboard | Add settlement report download page
+2025-04-26 | 09e9db0 | Rohan Bhat | analytics-pipeline | Add merchant settlement summary ETL job
+2025-04-30 | 4668525 | Arjun Mehta | payments-api | Add payment status polling endpoint
+2025-04-30 | 287d06c | Priya Nair | payment-retry-engine | Add exponential backoff cap for capture retries
+2025-04-30 | c7fee39 | Arjun Mehta | legacy-fx-service | Bump fx rate provider client version
+2025-05-12 | 05379ff | Priya Nair | legacy-fx-service | Patch security vulnerability in http client
+2025-05-13 | 4ce1eb9 | Meera Joshi | merchant-dashboard | Add settlement report download page
+2025-05-14 | 79ac1b1 | Priya Nair | payment-retry-engine | Add metrics for retry queue depth
+2025-05-16 | aa38d0a | Dev Kulkarni | merchant-dashboard | Improve dashboard load time with query batching
+2025-05-19 | 430f801 | Karan Shah | notifications-service | Fix duplicate email on payment status flap
+2025-05-21 | e1e3db6 | Priya Nair | kafka-settlement-consumer | Fix duplicate ledger write on rebalance replay
+2025-05-23 | e3c4365 | Karan Shah | notifications-service | Batch payment status emails per merchant
+2025-05-24 | 2e85cb2 | Sara Iqbal | oncall-bot | Fix pager escalation for settlement core services
+2025-05-27 | 1745d6d | Priya Nair | payment-retry-engine | Handle poison messages by routing to payments.retry.dlq
+2025-05-27 | 620e99d | Sara Iqbal | infra-terraform | Add staging environment for settlement services
+2025-06-07 | d5a804e | Karan Shah | notifications-service | Add webhook signature verification
+2025-06-11 | 10714d5 | Tanvi Desai | infra-terraform | Fix k8s HPA config drift on payments cluster
+2025-06-13 | 3c9ad14 | Rohan Bhat | analytics-pipeline | Add merchant settlement summary ETL job
+2025-06-16 | 82010c6 | Vikram Pillai | merchant-onboarding | Improve onboarding funnel event tracking
+2025-06-18 | 571aa87 | Priya Nair | payments-api | Add rate limiting per merchant API key
+2025-06-18 | 6c12ace | Priya Nair | payment-retry-engine | Guard against duplicate capture on gateway timeout
+2025-06-20 | c754108 | Priya Nair | payment-retry-engine | Refactor idempotency salt derivation
+2025-06-20 | 8d3aed9 | Karan Shah | notifications-service | Add webhook retry with jittered backoff
+2025-06-21 | cf8ebc5 | Rohan Bhat | analytics-pipeline | Fix partition pruning in daily aggregation
+2025-06-24 | df57c59 | Priya Nair | kafka-settlement-consumer | Pin consumer group partitions at 12 to avoid rebalance storms
+2025-06-28 | 48a639d | Meera Joshi | merchant-dashboard | Add settlement report download page
+2025-07-03 | 4d0b0d1 | Meera Joshi | merchant-dashboard | Add settlement report download page
+2025-07-05 | b227462 | Dev Kulkarni | design-system | Add DataTable component with sticky headers
+2025-07-06 | 0658663 | Rohan Bhat | analytics-pipeline | Migrate report generation to incremental model
+2025-07-07 | 1b3dbd5 | Priya Nair | payment-retry-engine | Guard against duplicate capture on gateway timeout
+2025-07-08 | 550a1b4 | Rohan Bhat | analytics-pipeline | Add data quality checks per runbook section 4
+2025-07-19 | b572f3d | Dev Kulkarni | merchant-dashboard | Fix date range picker timezone handling
+2025-07-22 | 475287a | Rohan Bhat | analytics-pipeline | Optimize settlement report query for large merchants
+2025-07-24 | 624c69b | Meera Joshi | merchant-dashboard | Add transaction search filters
+2025-07-26 | 11e9cda | Dev Kulkarni | merchant-dashboard | Improve dashboard load time with query batching
+2025-07-28 | b38a088 | Vikram Pillai | payments-api | Add request tracing headers
+2025-07-28 | c333e86 | Priya Nair | payment-retry-engine | Fix off-by-one in retry attempt counter
+2025-07-28 | 0bd4a99 | Dev Kulkarni | merchant-dashboard | Add webhook configuration UI
+2025-07-30 | 66245bf | Priya Nair | kafka-settlement-consumer | Add lag alerting for settlement topic
+2025-08-03 | 506e5a9 | Arjun Mehta | merchant-onboarding | Add PAN verification step to KYC flow
+2025-08-08 | b3aa7ef | Priya Nair | payments-api | Fix validation on capture amount edge cases
+2025-08-09 | 14f7ce8 | Priya Nair | legacy-fx-service | Bump fx rate provider client version
+2025-08-10 | 9132b63 | Vikram Pillai | payments-api | Fix validation on capture amount edge cases
+2025-08-10 | 56666f9 | Tanvi Desai | oncall-bot | Add incident channel auto-creation
+2025-08-12 | cb323e3 | Dev Kulkarni | merchant-dashboard | Add webhook configuration UI
+2025-08-16 | 944528c | Arjun Mehta | merchant-onboarding | Add PAN verification step to KYC flow
+2025-08-18 | d7c524a | Priya Nair | payments-api | Fix timeout handling on gateway calls
+2025-08-19 | 45df16b | Sara Iqbal | infra-terraform | Fix k8s HPA config drift on payments cluster
+2025-08-27 | a8f7ef5 | Rohan Bhat | analytics-pipeline | Add data quality checks per runbook section 4
+2025-08-28 | 080aadf | Priya Nair | kafka-settlement-consumer | Add lag alerting for settlement topic
+2025-08-29 | 01d7425 | Priya Nair | kafka-settlement-consumer | Pin consumer group partitions at 12 to avoid rebalance storms
+2025-09-01 | 614ff3d | Vikram Pillai | payments-api | Fix timeout handling on gateway calls
+2025-09-03 | 39820cf | Meera Joshi | merchant-dashboard | Improve dashboard load time with query batching
+2025-09-03 | 8a175df | Priya Nair | legacy-fx-service | Fix rounding on INR conversion
+2025-09-05 | 7c52fa1 | Priya Nair | ledger-reconciliation-cron | Add lock file guard to prevent concurrent reconciliation runs
+2025-09-07 | 21813d2 | Vikram Pillai | merchant-onboarding | Fix GSTIN validation regex
+2025-09-13 | bc8960a | Arjun Mehta | payments-api | Fix validation on capture amount edge cases
+2025-09-13 | 6123fdf | Arjun Mehta | payments-api | Improve error codes for declined captures
+2025-09-13 | 286218b | Vikram Pillai | merchant-onboarding | Add bank account penny-drop verification
+2025-09-13 | 9c7c737 | Meera Joshi | merchant-dashboard | Add settlement report download page
+2025-09-15 | 89fa6a6 | Vikram Pillai | payments-api | Fix timeout handling on gateway calls
+2025-09-15 | 0a2c827 | Arjun Mehta | merchant-onboarding | Add bank account penny-drop verification
+2025-09-16 | 46fde06 | Dev Kulkarni | design-system | Add DataTable component with sticky headers
+2025-09-17 | 894a05e | Priya Nair | ledger-reconciliation-cron | Add lock file guard to prevent concurrent reconciliation runs
+2025-09-17 | c991603 | Rohan Bhat | analytics-pipeline | Add backfill support for missed ETL windows
+2025-09-18 | 5a8aaec | Rohan Bhat | analytics-pipeline | Optimize settlement report query for large merchants
+2025-09-18 | 1f115b7 | Dev Kulkarni | design-system | Add currency input component
+2025-09-30 | f668a61 | Rohan Bhat | analytics-pipeline | Migrate report generation to incremental model
+2025-10-02 | 6dadd6c | Priya Nair | payment-retry-engine | Fix idempotency key rotation on retry batch flush
+2025-10-02 | c30ff46 | Priya Nair | payment-retry-engine | Tune retry batch size for HDFC settlement window
+2025-10-03 | bacfb3d | Vikram Pillai | payments-api | Add request tracing headers
+2025-10-03 | 40497b7 | Karan Shah | notifications-service | Fix SMS template encoding for Hindi content
+2025-10-04 | 98b8e4c | Rohan Bhat | analytics-pipeline | Add data quality checks per runbook section 4
+2025-10-06 | 5715bd6 | Priya Nair | payment-retry-engine | Fix idempotency key rotation on retry batch flush
+2025-10-09 | a3d7062 | Vikram Pillai | payments-api | Add pagination to transactions listing
+2025-10-11 | 35ebd32 | Karan Shah | notifications-service | Fix duplicate email on payment status flap
+2025-10-14 | b6aae05 | Sara Iqbal | infra-terraform | Fix k8s HPA config drift on payments cluster
+2025-10-16 | 5563f61 | Karan Shah | notifications-service | Add webhook signature verification
+2025-10-17 | 01a9e71 | Vikram Pillai | payments-api | Fix validation on capture amount edge cases
+2025-10-17 | f50bea6 | Arjun Mehta | payments-api | Improve error codes for declined captures
+2025-10-17 | d58842d | Priya Nair | payments-api | Add request tracing headers
+2025-10-18 | 36d8393 | Priya Nair | kafka-settlement-consumer | Tune max.poll.records for settlement bursts
+2025-10-18 | dfde4fb | Priya Nair | ledger-reconciliation-cron | Fix double-posting when cron reruns before 06:00 IST
+2025-10-25 | 55fa1ab | Sara Iqbal | infra-terraform | Rotate RDS credentials via secrets manager
+2025-10-29 | daf61a2 | Vikram Pillai | payments-api | Add pagination to transactions listing
+2025-11-07 | 81f631d | Priya Nair | payment-retry-engine | Add metrics for retry queue depth
+2025-11-08 | 1a84a51 | Ananya Rao | notifications-service | Fix SMS template encoding for Hindi content
+2025-11-09 | edd4253 | Vikram Pillai | merchant-onboarding | Add bank account penny-drop verification
+2025-11-11 | fcbb4e5 | Arjun Mehta | merchant-onboarding | Handle KYC document re-upload flow
+2025-11-13 | 6e0d264 | Dev Kulkarni | merchant-dashboard | Add transaction search filters
+2025-11-16 | 3da9c2a | Priya Nair | payment-retry-engine | Handle poison messages by routing to payments.retry.dlq
+2025-11-23 | fbf6e16 | Rohan Bhat | analytics-pipeline | Add backfill support for missed ETL windows
+2025-11-24 | 7fcd9eb | Arjun Mehta | payments-api | Add rate limiting per merchant API key
+2025-11-25 | 10f1bc8 | Priya Nair | payments-api | Add payment status polling endpoint
+2025-11-26 | e4347d5 | Dev Kulkarni | design-system | Fix button focus states for accessibility
+2025-11-29 | 14a0bcc | Tanvi Desai | infra-terraform | Add alerting module for consumer lag
+2025-12-01 | 7131626 | Dev Kulkarni | merchant-dashboard | Improve dashboard load time with query batching
+2025-12-06 | 4bb00f2 | Dev Kulkarni | merchant-dashboard | Add transaction search filters
+2025-12-10 | 3ceddf2 | Priya Nair | kafka-settlement-consumer | Handle malformed settlement event schema v3
+2025-12-10 | a9d3c2e | Meera Joshi | merchant-dashboard | Add webhook configuration UI
+2025-12-11 | 1d87096 | Rohan Bhat | analytics-pipeline | Fix partition pruning in daily aggregation
+2025-12-15 | f3b63fe | Dev Kulkarni | merchant-dashboard | Add transaction search filters
+2025-12-16 | 6142ea7 | Arjun Mehta | payments-api | Add pagination to transactions listing
+2025-12-16 | cc530e3 | Tanvi Desai | infra-terraform | Add alerting module for consumer lag
+2025-12-19 | 1bf90e2 | Priya Nair | kafka-settlement-consumer | Fix duplicate ledger write on rebalance replay
+2025-12-23 | a25d6b2 | Karan Shah | notifications-service | Add webhook retry with jittered backoff
+2025-12-29 | e117dac | Arjun Mehta | merchant-onboarding | Fix GSTIN validation regex
+2025-12-31 | 6651529 | Rohan Bhat | analytics-pipeline | Add merchant settlement summary ETL job
+2026-01-01 | 63d62a3 | Sara Iqbal | infra-terraform | Add alerting module for consumer lag
+2026-01-11 | b45ed1f | Priya Nair | payments-api | Add rate limiting per merchant API key
+2026-01-14 | 5af3055 | Arjun Mehta | payments-api | Add payment status polling endpoint
+2026-01-14 | cbceabd | Rohan Bhat | analytics-pipeline | Migrate report generation to incremental model
+2026-01-19 | 25e9797 | Rohan Bhat | analytics-pipeline | Add merchant settlement summary ETL job
+2026-01-23 | 847fd9b | Priya Nair | kafka-settlement-consumer | Handle malformed settlement event schema v3
+2026-01-28 | 4b0dbb4 | Arjun Mehta | payments-api | Fix validation on capture amount edge cases
+2026-01-29 | e71e43a | Meera Joshi | merchant-dashboard | Add webhook configuration UI
+2026-01-29 | f3821cf | Tanvi Desai | oncall-bot | Fix pager escalation for settlement core services
+2026-01-30 | f157847 | Sara Iqbal | infra-terraform | Rotate RDS credentials via secrets manager
+2026-02-09 | c8b8d9c | Priya Nair | ledger-reconciliation-cron | Add mismatch report email to finance team
+2026-02-15 | a491f0b | Vikram Pillai | payments-api | Improve error codes for declined captures
+2026-02-18 | ff50bde | Priya Nair | payment-retry-engine | Add exponential backoff cap for capture retries
+2026-02-23 | e3e9de9 | Vikram Pillai | merchant-onboarding | Fix GSTIN validation regex
+2026-02-24 | d72b610 | Tanvi Desai | oncall-bot | Add incident channel auto-creation
+2026-02-25 | 001a9a8 | Dev Kulkarni | merchant-dashboard | Fix date range picker timezone handling
+2026-02-26 | 18d0752 | Priya Nair | kafka-settlement-consumer | Fix offset commit race during consumer rebalance
+2026-02-26 | bfddc3d | Rohan Bhat | analytics-pipeline | Add backfill support for missed ETL windows
+2026-03-03 | dd334cc | Rohan Bhat | analytics-pipeline | Optimize settlement report query for large merchants
+2026-03-06 | 8ae8905 | Sara Iqbal | infra-terraform | Rotate RDS credentials via secrets manager
+2026-03-11 | 96da1da | Arjun Mehta | payments-api | Add payment status polling endpoint
+2026-03-11 | bc10fa5 | Sara Iqbal | infra-terraform | Add staging environment for settlement services
+2026-03-12 | c51155f | Sara Iqbal | infra-terraform | Add staging environment for settlement services
+2026-03-15 | edcd465 | Priya Nair | kafka-settlement-consumer | Fix offset commit race during consumer rebalance
+2026-03-19 | 1ca3c44 | Karan Shah | notifications-service | Fix SMS template encoding for Hindi content
+2026-03-22 | 4eea04e | Rohan Bhat | analytics-pipeline | Fix partition pruning in daily aggregation
+2026-03-23 | 693dffb | Priya Nair | kafka-settlement-consumer | Add lag alerting for settlement topic
+2026-03-26 | c9535b6 | Rohan Bhat | analytics-pipeline | Optimize settlement report query for large merchants
+2026-03-28 | ecf27e7 | Dev Kulkarni | merchant-dashboard | Add transaction search filters
+2026-03-28 | 638c254 | Sara Iqbal | infra-terraform | Rotate RDS credentials via secrets manager
+2026-03-30 | b41b314 | Arjun Mehta | merchant-onboarding | Improve onboarding funnel event tracking
+2026-04-04 | b822568 | Meera Joshi | design-system | Add currency input component
+2026-04-07 | be6033f | Dev Kulkarni | design-system | Fix button focus states for accessibility
+2026-04-10 | 2ef9127 | Priya Nair | ledger-reconciliation-cron | Handle late-arriving HDFC SFTP settlement files
+2026-04-13 | 3985c3c | Priya Nair | kafka-settlement-consumer | Tune max.poll.records for settlement bursts
+2026-04-15 | b8db067 | Priya Nair | payment-retry-engine | Handle poison messages by routing to payments.retry.dlq
+2026-04-16 | b253d21 | Priya Nair | ledger-reconciliation-cron | Skip reconciliation for reversed transactions
+2026-04-18 | 76f2dbf | Meera Joshi | design-system | Add DataTable component with sticky headers
+2026-04-20 | 23bed01 | Arjun Mehta | payments-api | Add pagination to transactions listing
+2026-04-21 | f91e1d4 | Priya Nair | payments-api | Add payment status polling endpoint
+2026-04-22 | d20eac1 | Rohan Bhat | analytics-pipeline | Migrate report generation to incremental model
+2026-04-28 | 34f3193 | Sara Iqbal | infra-terraform | Add alerting module for consumer lag
+2026-04-29 | 0dde29a | Priya Nair | kafka-settlement-consumer | Handle malformed settlement event schema v3
+2026-04-29 | fb10987 | Sara Iqbal | oncall-bot | Fix pager escalation for settlement core services
+2026-04-30 | f89897b | Priya Nair | payment-retry-engine | Fix off-by-one in retry attempt counter
+2026-05-02 | d10bd1d | Rohan Bhat | analytics-pipeline | Fix partition pruning in daily aggregation
+2026-05-05 | 7914c12 | Priya Nair | kafka-settlement-consumer | Pin consumer group partitions at 12 to avoid rebalance storms
+2026-05-07 | c074718 | Meera Joshi | design-system | Add currency input component
+2026-05-13 | 66aa938 | Priya Nair | ledger-reconciliation-cron | Handle late-arriving HDFC SFTP settlement files
+2026-05-19 | 4bf50b5 | Priya Nair | ledger-reconciliation-cron | Fix timezone bug in settlement date matching
+2026-05-27 | 25c73c4 | Dev Kulkarni | merchant-dashboard | Improve dashboard load time with query batching
+2026-06-06 | e827a1b | Meera Joshi | design-system | Add DataTable component with sticky headers
+2026-06-07 | 8fadc1a | Priya Nair | payments-api | Fix timeout handling on gateway calls
+2026-06-08 | eeea163 | Vikram Pillai | merchant-onboarding | Add PAN verification step to KYC flow
+2026-06-09 | 688c701 | Dev Kulkarni | merchant-dashboard | Fix date range picker timezone handling
+2026-06-13 | e645f12 | Dev Kulkarni | merchant-dashboard | Add settlement report download page
+2026-06-17 | 9e87e04 | Meera Joshi | merchant-dashboard | Fix date range picker timezone handling
+2026-06-20 | 8eb2257 | Meera Joshi | design-system | Fix button focus states for accessibility
+2026-06-23 | 3d3f379 | Sara Iqbal | infra-terraform | Add staging environment for settlement services
+2026-06-25 | 42c18a6 | Vikram Pillai | merchant-onboarding | Handle KYC document re-upload flow

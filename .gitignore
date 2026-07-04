@@ -1,0 +1,38 @@
+# --- Secrets / env files (anywhere in the repo) ---
+.env
+.env.*
+!.env.example
+!*.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+
+# --- Cognee local state (any location: backend/, repo root, etc.) ---
+.cognee_data/
+.cognee_system/
+.cognee/
+
+# --- Node / frontend (Sp's Vite app, §5) ---
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.idea/
+*.swp

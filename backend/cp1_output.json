@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "description": "(Priya Nair) -authored/committed-> (payment-retry-engine) [+ other 2 red zones]",
+    "status": "NOT_CHECKABLE",
+    "detail": "source file(s) not ingested into dataset 'spike': ['git/git_log.txt']"
+  },
+  {
+    "id": 2,
+    "description": "(Priya Nair) -resolved-> (PM-2025-08), (PM-2025-11), (PM-2026-01)",
+    "status": "FAIL",
+    "detail": "no node matched 'priya' (extraction likely missed this entity)"
+  },
+  {
+    "id": 3,
+    "description": "(payment-retry-engine) -affected_in-> (PM-2025-08)",
+    "status": "FAIL",
+    "detail": "no node matched 'retry' (extraction likely missed this entity)"
+  },
+  {
+    "id": 4,
+    "description": "(analytics-pipeline) -documented_by-> (analytics-pipeline-runbook)",
+    "status": "NOT_CHECKABLE",
+    "detail": "source file(s) not ingested into dataset 'spike': ['runbooks/analytics-pipeline-runbook.md']"
+  },
+  {
+    "id": 5,
+    "description": "(legacy-fx-service) -deprecated_by-> (ADR-015)",
+    "status": "NOT_CHECKABLE",
+    "detail": "source file(s) not ingested into dataset 'spike': ['adrs/ADR-015-deprecate-legacy-fx.md']"
+  },
+  {
+    "id": 6,
+    "description": "(payments-api) -depends_on-> (payment-retry-engine) [centrality edges]",
+    "status": "NOT_CHECKABLE",
+    "detail": "source file(s) not ingested into dataset 'spike': ['roster/service_registry.md']"
+  }
+]
